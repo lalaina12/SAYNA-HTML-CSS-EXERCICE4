@@ -1,0 +1,558 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('font/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('font/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat Semi Bold';
+    src: url('font/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('font/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'Far From Homecoming';
+    src: url('font/Far-From-Homecoming.otf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Regular';
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat Medium';
+}
+h1{
+    font-family:'Far From Homecoming' ;
+    text-transform: uppercase;
+    color: #fff;
+}
+h3{
+    font-family:'Montserrat Regular';
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #b11313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.navbar .logo {
+   display: flex;
+   align-items: center;
+   
+}
+.navbar .logo img{
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.navbar .nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-1{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.section-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section1-info{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.section1-info h1{
+
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.section1-info .btns-group button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #b11313;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Montserrat Medium';
+    transition: all 0.5s;
+    
+}
+.section1-info .btns-group{
+    margin-bottom: 20px;
+}
+.section1-info .btns-group button:first-child:hover,.section1-info .btns-group button:last-child{
+    border:2px solid #fff;
+    background:none;
+    color: #fff;
+}
+.section1-info .btns-group button:last-child:hover{
+    color: #b11313;
+    background: #fff;
+    border: none;
+}
+.section1-info h2{
+    color: #fff;
+}
+.section-2{
+    width: 100%;
+    min-height: 300px;
+    margin-top: -10px;
+    background: #b11313;
+}
+.section-2 .section2-content{
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+.section-2 .section2-content p{
+    width: 500px;
+}
+.section-2 .section2-content .spidermans-cards{
+    width: 100%;
+    height: auto;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    
+    
+}
+.section-2 .section2-content .spidermans-cards .card {
+    display: grid;
+    grid-template-rows: 1fr max-content max-content;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.section-2 .section2-content .spidermans-cards .card p{
+    width: unset;
+    font-size: 14px;
+    text-align: justify;
+    max-width: 306px;
+    margin: 30px 0;
+
+    
+}
+li{
+    color: #fff;
+}
+.section-2 .section2-content .spidermans-cards button{
+   width: 200px;
+   display: block;
+   margin: 0 auto;
+   font-size: 16px;
+    color: #b11313;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Montserrat Medium';
+    transition: all 0.5s;
+    padding: 10px 0;
+    margin-bottom: 100px;
+}
+.section-3{
+    width: 100%;
+    min-height: 500px;
+    background: #114c92;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+  
+    
+}
+.section-3 .formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section-3 .formulaire form{
+    width: 100%;
+    max-width: 400px;
+}
+.section-3 .formulaire form input{
+    display: block;
+    outline: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: none;
+}
+.section-3 .formulaire form button{
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    font-family: 'Montserrat Medium';
+    transition: all 0.5s;
+    padding: 10px 30px;
+}
+.section-4{
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    background: #b11313;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    
+    
+}
+#section4-img,#section3-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-4 .inscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.section-4 .inscription p{
+    width: 500px;
+    text-align: left;
+}
+.section-4 .inscription form{
+    margin-top: 30px;
+}
+.section-4 .inscription input[type='text']{
+    display: block;
+    outline: none;
+    width: 300px;
+    margin: 10px 0;
+    background: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.section-4 .inscription input::placeholder{
+    color: #fff;
+}
+.section-4 .inscription .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom:30px;
+
+}
+.section-4 .inscription .form-group label{
+    display: inline-flex;
+    width: 300px;
+    margin-left: 20px;
+    color: #fff;
+}
+.section-4 .inscription button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #b11313;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Montserrat Medium';
+    transition: all 0.5s;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background: #000000;
+}
+
+footer .top-footer{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+footer .top-footer a{
+    margin-right: 20px;
+}
+footer .top-footer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+footer .top-footer span img{
+    margin-right: 5px;
+}
+select{
+    background: #b11313;
+    color: #fff;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+.bottom-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.social-group{
+    display: flex;
+    
+}
+.logo-social{
+    display: inline-block;
+    background: #b11313;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 9999px;
+}
+/* adversaire*/
+#nav-adv{
+    background-color: #f1c530;
+}
+.vilain-section{
+    width: 100%;
+    min-height: 300px;
+    background: #f1c530;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 60px;
+    flex-wrap: wrap;
+}
+.vilain-card{
+    width: 250px;
+    margin: 30px;
+    
+
+}
+.vilain-card img{
+    width: 100%;
+
+}
+.vilain-card .info{
+    width: 100%;
+    height: auto;
+    margin-top: -15px;
+    background: #000000;
+    padding: 10px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    
+}
+.info p{
+    width: 100%;
+    background: #f1c530;
+    font-size: 14px;
+    color: #000000;
+    padding: 0 10px;padding-bottom: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.info .villain-name{
+    font-family: 'Montserrat Bold';
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    padding: 24px 0px;
+}
+#adv .logo-social{
+    background: #f1c530;
+}
+
+@media screen and (max-width:1117px) {
+    .section-2 .section2-content .spidermans-cards{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: none;
+        
+    }
+    .section-2 .section2-content .spidermans-cards .card:first-child,.section-2 .section2-content .spidermans-cards .card:nth-child(2){
+        grid-row: 1;
+    }
+    .section-2 .section2-content .spidermans-cards .card:last-child{
+        grid-row: 2;
+    }
+    .section-4 .inscription{
+
+        margin: 0 5%;
+    }
+    
+    footer .top-footer{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+    
+
+    
+}
+@media screen and (max-width:768px){
+    .section-2 .section2-content .spidermans-cards{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: none;
+        
+    }
+    #xs{
+        max-width: 50%;
+    }
+    .section-2 .section2-content .spidermans-cards .card:first-child{
+        grid-row: 1;
+    }
+    .section-2 .section2-content .spidermans-cards .card:nth-child(2){
+        grid-row: 2;
+    }
+    .section-2 .section2-content .spidermans-cards .card:last-child{
+        grid-row: 3;
+    }
+    #section3-img{
+        background-size: cover;
+    }
+    .section-3{
+        grid-template-columns: 1fr;
+        position: relative;
+        align-items: center;
+
+    }
+    .section-3 .formulaire{
+        position: absolute;
+    }
+    .section-4{
+        grid-template-columns: none;
+        overflow: hidden;
+        display: block;
+        padding: 0  10px;
+        justify-content: center;
+        padding-bottom: 60px;
+        
+    }
+    #section4-img{
+        width: 60%;
+        height: auto;
+        object-fit: unset;
+        position: absolute;
+        right: -10%;
+        bottom: 0;
+    }
+   footer .top-footer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+        margin-left: 12px;
+    }
+    .bottom-footer{
+        margin-top: 30px;
+    }
+    footer .top-footer span{
+        align-self: center;
+        order: 7;
+    }
+    footer .top-footer select{
+        position: absolute;
+        width: 75px;
+        top: 20%;
+        right: 2%;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        background: transparent;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .navbar .nav-links{
+        display: none;
+    }
+    .section1-info{
+        left: 5%;
+    }
+    .section1-info h1{
+    
+        font-size: 32px;
+               margin-bottom: 10px;
+    }
+    .section1-info .btns-group button{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .inscription{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .inscription h1{
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .inscription p{
+        text-align: center;
+        max-width: 100%;
+        word-wrap: break-word;
+        font-size: 12px;
+    }
+    .inscription form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section-4 .inscription input[type='text']{
+        max-width: 100%;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .navbar .logo img:last-child{
+        width: 80%;
+    }
+    #nav-adv{
+        background-color: transparent;
+    }
+    .logo{
+        width: 50%;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
